@@ -1,11 +1,11 @@
-# PDF Writer
+# Rest PDF Generator
 
 Gera um PDF a partir de parâmetros.
 
 Pode executar com o docker
 
 ```shell
-docker run --rm -p 80:5000 caduvieira/pdf_writer
+docker run --rm -p 80:5000 caduvieira/rest_pdf
 ```
 
 Depois acesse http://localhost/?cnpj=teste&numero=1
