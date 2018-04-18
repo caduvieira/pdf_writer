@@ -48,12 +48,12 @@
 				</textElement>
 				<textFieldExpression><![CDATA["importe a quantidade máxima de " + $P{numero}]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isStretchWithOverflow="true">
 				<reportElement x="59" y="470" width="447" height="15" uuid="38085873-26de-4bbb-a544-08768ed79691"/>
 				<textElement textAlignment="Center">
 					<font fontName="SansSerif" size="12"/>
 				</textElement>
-				<textFieldExpression><![CDATA["Ou acesse: "+ "http://10.209.112.36/validar/" + $P{hash_value}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Ou acesse http://localhost/validar/" + $P{hash_value}]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="50" y="125" width="199" height="15" uuid="5716fb48-8d4d-4da2-8532-6054aeaed52a"/>
@@ -85,8 +85,7 @@
 					<paragraph lineSpacing="Proportional"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Clique aqui para verificar a validacão do certificado"]]></textFieldExpression>
-				<anchorNameExpression><![CDATA["Clique aqui para visitar a validacão do certificado"]]></anchorNameExpression>
-				<hyperlinkReferenceExpression><![CDATA["http://10.209.112.36/validar/"+$P{hash_value}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA["http://localhost/validar/"+$P{hash_value}]]></hyperlinkReferenceExpression>
 			</textField>
 		</band>
 	</detail>
